@@ -9,6 +9,7 @@ import AboutPage from './pages/AboutPage'
 import FaqPage from './pages/FaqPage'
 import ContactUsPage from './pages/ContactUsPage'
 import Testimonial from './components/Testimonial'
+import PageNotFound from './pages/PageNotFound'
 
 export default function App() {
   return (
@@ -25,6 +26,9 @@ export default function App() {
         <Route path='/destination'element={<SearchFlights/>} />
         <Route path='/testimonial'element={<Testimonial/>} />
 
+
+
+        <Route path='/*' element={<PageNotFound/>}/>
       </Routes>
       <Footer/>
     </BrowserRouter>

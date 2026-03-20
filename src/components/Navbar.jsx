@@ -38,7 +38,6 @@ export default function Navbar() {
                     <li><Link className="hover:text-red-700" to="/">Home</Link></li>
                     <li><Link className="hover:text-red-700" to="/aboutus">About</Link></li>
                     <li><Link className="hover:text-red-700" to="/booking">Booking</Link></li>
-                    <li><Link className="hover:text-red-700" to="/offers">Offers</Link></li>
                     <li><Link className="hover:text-red-700" to="/blogs">Blogs</Link></li>
                     <li><Link className="hover:text-red-700" to="/contactus">ContactUs</Link></li>
                     <li><Link className="hover:text-red-700" to="/login">Login</Link></li>
@@ -51,7 +50,6 @@ export default function Navbar() {
                     <Link to="/" className="block">Home</Link>
                     <Link to="/aboutus" className="block">About</Link>
                     <Link to="/booking" className="block">Booking</Link>
-                    <Link to="/offers" className="block">Offers</Link>
                     <Link to="/blogs" className="block">Blogs</Link>
                     <Link to="/contactus" className="block">ContactUs</Link>
                     <Link to="/login" className="block">Login</Link>

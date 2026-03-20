@@ -17,7 +17,7 @@ export default function SearchFlights() {
         <>
             <section className="relative w-full h-full overflow-hidden">
                 <img
-                    src="/images/home/search.jpeg"
+                    src="/Images/booking Banner.jpg.jpeg"
                     className="absolute inset-0 w-full h-full object-cover"
                 />
 

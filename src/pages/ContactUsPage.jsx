@@ -9,7 +9,7 @@ export default function ContactUsPage() {
       <div className="relative h-[90vh]">
 
         <img
-          src="/Images/home page banner.jpg.jpeg"
+          src="/Images/contact Us Banner.jpg.jpeg"
           alt="banner"
           className="w-full h-full object-cover"
         />
