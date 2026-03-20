@@ -211,77 +211,77 @@ export default function HomePage() {
                 </div>
             </div>
 
-            {/* About Section */}
-            <div className=" py-12 px-6 md:px-16">
-                <h2 className="text-center text-3xl py-4">About Us</h2>
-                <div className="max-w-7xl mx-auto py-10 px-3 grid md:grid-cols-2 gap-10 items-center">
+            
+                {/* Section 1 */}
+                <div className="max-w-7xl mx-auto py-6 md:py-10 grid md:grid-cols-2 gap-6 md:gap-10 items-center">
 
                     {/* Image */}
-                    <div className="order-2 md:order-1 shadow-md hover:shadow-xl transition hover:-translate-y-2">
+                    <div className="order-1 md:order-1 shadow-md hover:shadow-xl transition hover:-translate-y-2">
                         <img
                             src="/Images/about.jpg"
                             alt="about"
-                            className="w-[650px] h-[400px] border"
+                            className="w-full h-[250px] md:h-[400px] object-cover rounded-xl"
                         />
                     </div>
 
                     {/* Content */}
-                    <div className="order-2 text-center md:order-1">
-
-                        <p className="text-gray-600 mb-4">
+                    <div className="order-2 text-center md:text-left">
+                        <p className="text-gray-600 mb-4 text-sm md:text-base">
                             At FlyAway, we make flight booking simple, fast, and affordable.
                             Our platform helps you search, compare, and book flights from top airlines worldwide with ease.
                         </p>
 
-                        <p className="text-gray-600 mb-6">
+                        <p className="text-gray-600 mb-6 text-sm md:text-base">
                             We focus on providing secure payments, real-time availability, and a smooth booking experience.
                             Whether you travel for business or leisure, we ensure your journey starts stress-free.
                         </p>
-                        <button>
-                            <Link to="/about" className="text-center bg-red-600 p-4 rounded-3xl text-white hover:bg-red-800">Read More</Link>
-                        </button>
-                    </div>
 
+                        <Link
+                            to="/about"
+                            className="inline-block bg-red-600 px-6 py-3 rounded-full text-white hover:bg-red-800 transition"
+                        >
+                            Read More
+                        </Link>
+                    </div>
                 </div>
-                <div className="max-w-7xl mx-auto py-10 px-3 grid md:grid-cols-2 gap-10 items-center">
+
+                {/* Section 2 */}
+                <div className="max-w-7xl mx-auto py-6 md:py-10 grid md:grid-cols-2 gap-6 md:gap-10 items-center">
 
                     {/* Image */}
                     <div className="order-1 md:order-2 shadow-md hover:shadow-xl transition hover:-translate-y-2">
                         <img
                             src="/Images/about.jpg"
                             alt="about"
-                            className="w-[650px] h-[400px] border"
+                            className="w-full h-[250px] md:h-[400px] object-cover rounded-xl"
                         />
                     </div>
 
                     {/* Content */}
-                    <div className="order-2 text-center md:order-1">
-                        <p className="text-gray-600 mb-4">
+                    <div className="order-2 text-center md:text-left">
+                        <p className="text-gray-600 mb-4 text-sm md:text-base">
                             At FlyAway, we make flight booking simple, fast, and affordable.
                             Our platform helps you search, compare, and book flights from top airlines worldwide with ease.
                         </p>
 
-                        <p className="text-gray-600 mb-4">
-                            At FlyAway, we make flight booking simple, fast, and affordable.
-                            Our platform helps you search, compare, and book flights from top airlines worldwide with ease.
-                        </p>
-                        <p className="text-gray-600 mb-4">
-                            At FlyAway, we make flight booking simple, fast, and affordable.
-                            Our platform helps you search, compare, and book flights from top airlines worldwide with ease.
-                        </p>
-                        <p className="text-gray-600 mb-6">
+                        <p className="text-gray-600 mb-4 text-sm md:text-base">
                             We focus on providing secure payments, real-time availability, and a smooth booking experience.
+                        </p>
+
+                        <p className="text-gray-600 mb-4 text-sm md:text-base">
                             Whether you travel for business or leisure, we ensure your journey starts stress-free.
                         </p>
 
-                         <button>
-                            <Link to="/about" className="text-center bg-red-600 p-4 rounded-3xl text-white hover:bg-red-800">Read More</Link>
-                        </button>
+                        <Link
+                            to="/about"
+                            className="inline-block bg-red-600 px-6 py-3 rounded-full text-white hover:bg-red-800 transition"
+                        >
+                            Read More
+                        </Link>
                     </div>
-
                 </div>
 
-            </div>
+            {/* </div> */}
 
 
 
@@ -317,67 +317,67 @@ export default function HomePage() {
             <Destinations />
             <FaqPage />
 
-            <Testimonial/>
+            <Testimonial />
 
 
-    <section className="bg-gray-100 p-4 px-3">
+            <section className="bg-gray-100 p-4 px-3">
 
-  {/* Center Form */}
-  <div className="max-w-3xl mx-auto">
-    <form className="bg-white p-8 rounded-2xl shadow-lg space-y-4">
+                {/* Center Form */}
+                <div className="max-w-3xl mx-auto">
+                    <form className="bg-white p-8 rounded-2xl shadow-lg space-y-4">
 
-      <div>
-        <label className="block mb-1 font-medium">Name*</label>
-        <input
-          type="text"
-          placeholder="Enter Your Full Name"
-          className="w-full border p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-700"
-        />
-      </div>
+                        <div>
+                            <label className="block mb-1 font-medium">Name*</label>
+                            <input
+                                type="text"
+                                placeholder="Enter Your Full Name"
+                                className="w-full border p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-700"
+                            />
+                        </div>
 
-      <div>
-        <label className="block mb-1 font-medium">Email*</label>
-        <input
-          type="email"
-          placeholder="Enter Your Email Address"
-          className="w-full border p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-700"
-        />
-      </div>
+                        <div>
+                            <label className="block mb-1 font-medium">Email*</label>
+                            <input
+                                type="email"
+                                placeholder="Enter Your Email Address"
+                                className="w-full border p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-700"
+                            />
+                        </div>
 
-      <div>
-        <label className="block mb-1 font-medium">Phone*</label>
-        <input
-          type="tel"
-          placeholder="Enter Your Phone Number"
-          className="w-full border p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-700"
-        />
-      </div>
+                        <div>
+                            <label className="block mb-1 font-medium">Phone*</label>
+                            <input
+                                type="tel"
+                                placeholder="Enter Your Phone Number"
+                                className="w-full border p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-700"
+                            />
+                        </div>
 
-      <div>
-        <label className="block mb-1 font-medium">Subject</label>
-        <input
-          type="text"
-          placeholder="Subject"
-          className="w-full border p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-700"
-        />
-      </div>
+                        <div>
+                            <label className="block mb-1 font-medium">Subject</label>
+                            <input
+                                type="text"
+                                placeholder="Subject"
+                                className="w-full border p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-700"
+                            />
+                        </div>
 
-      <div>
-        <label className="block mb-1 font-medium">Message</label>
-        <textarea
-          rows="4"
-          placeholder="Your Message"
-          className="w-full border p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-700"
-        ></textarea>
-      </div>
+                        <div>
+                            <label className="block mb-1 font-medium">Message</label>
+                            <textarea
+                                rows="4"
+                                placeholder="Your Message"
+                                className="w-full border p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-700"
+                            ></textarea>
+                        </div>
 
-      <button className="w-full bg-red-700 cursor-pointer text-white py-3 rounded-lg hover:bg-red-800 transition">
-        Send Message
-      </button>
+                        <button className="w-full bg-red-700 cursor-pointer text-white py-3 rounded-lg hover:bg-red-800 transition">
+                            Send Message
+                        </button>
 
-    </form>
-  </div>
-</section>
+                    </form>
+                </div>
+            </section>
         </div>
     );
 }
