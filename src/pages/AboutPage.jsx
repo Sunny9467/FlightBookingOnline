@@ -50,9 +50,9 @@ const About = () => {
           {/* Right Image */}
           <div className="order-2 md:order-1 shadow-md hover:shadow-xl transition hover:-translate-y-2">
             <img
-              src="/Images/about.jpg"
+              src="public/Images/About Us intro.jpg.jpeg"
               alt="about"
-              className="w-[550px] h-[560px] border"
+              className="w-full h-full object-cover"
             />
           </div>
         </div>

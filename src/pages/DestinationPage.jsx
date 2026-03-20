@@ -6,15 +6,14 @@ import { Autoplay,  Pagination } from "swiper/modules";
 export default function Destinations() {
 
   const data = [
-    { img: "/Images/d1.jpg", title: "London, UK" },
-    { img: "/Images/d2.jpg", title: "Maldives" },
-    { img: "/Images/d3.jpg", title: "Tokyo, Japan" },
-    { img: "/Images/d4.jpg", title: "Paris, France" },
-    { img: "/Images/d5.jpg", title: "Dubai" },
-    { img: "/Images/d5.jpg", title: "Dubai" },
-    { img: "/Images/d5.jpg", title: "Dubai" },
-    { img: "/Images/d5.jpg", title: "Dubai" },
-    { img: "/Images/d5.jpg", title: "Dubai" }
+    { img: "/Images/New York City.jpg.jpeg", title: "New York City" },
+    { img: "Images/San Francisco.jpg.jpeg", title: "San Francisco" },
+    { img: "/Images/Los Angeles.jpg.jpeg", title: "Los Angeles" },
+    { img: "/Images/Las Vegas.jpg.jpeg", title: "Las Vegas" },
+    { img: "/Images/Miami.jpg.jpeg", title: "Miami" },
+    { img: "/Images/Grand Canyon national park.jpg.jpeg", title: "Grand Canyon" },
+    { img: "/Images/Walt Disney World.jpg.jpeg", title: "Walt Disney World" },
+    { img: "public/Images/Yellowstone National Park.jpg.jpeg", title: "Yellowstone National Park" },
   ];
 
   return (
@@ -43,7 +42,7 @@ export default function Destinations() {
 
                                     <div className='' >
                                         <div className='relative overflow-hidden group transition'>
-                                            <img src={item.img}  className=' h-[300px] w-[450px] border transition-all duration-300 group-hover:scale-110' alt={`${item.img}`} />
+                                            <img src={item.img}  className=' h-full w-full object-cover transition-all duration-300 group-hover:scale-110' alt={`${item.img}`} />
                                         </div>
                                         <div className='p-1 sm:p-2 md:p-3'>
                                             <h2 className='text-lg sm:text-xl md:text-2xl text-center'>{item.country}</h2>

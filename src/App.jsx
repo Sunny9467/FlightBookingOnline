@@ -10,6 +10,7 @@ import FaqPage from './pages/FaqPage'
 import ContactUsPage from './pages/ContactUsPage'
 import Testimonial from './components/Testimonial'
 import PageNotFound from './pages/PageNotFound'
+import LoginPage from './pages/user/LoginPage'
 
 export default function App() {
   return (
@@ -22,10 +23,13 @@ export default function App() {
         <Route path='/faq' element={<FaqPage/>}/>
         <Route path='/contactus' element={<ContactUsPage/>}/>
 
+        {/* User */}
+        <Route path='/login'element={<LoginPage/>} />
+
+
         <Route path='/booking'element={<SearchFlights/>} />
         <Route path='/destination'element={<SearchFlights/>} />
         <Route path='/testimonial'element={<Testimonial/>} />
-
 
 
         <Route path='/*' element={<PageNotFound/>}/>

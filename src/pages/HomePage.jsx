@@ -199,7 +199,7 @@ export default function HomePage() {
                             <div className="md:col-span-full mt-3">
                                 <button
                                     type="submit"
-                                    className="w-full md:w-auto bg-gray-600 hover:bg-red-700 transition text-white hover:text-white cursor-pointer px-10 py-3 rounded-xl font-semibold shadow-lg hover:scale-105"
+                                    className="w-full md:w-auto bg-red-700 hover:bg-red-900 transition text-white hover:text-white cursor-pointer px-10 py-3 rounded-xl font-semibold shadow-lg hover:scale-105"
                                 >
                                     Search Flights
                                 </button>

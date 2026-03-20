@@ -24,7 +24,7 @@ export default function SearchFlights() {
                 <div className="absolute inset-0 bg-black/40"></div>
 
                 <div className="relative z-10 max-w-6xl mx-auto my-auto py-15 w-full mx-4">
-                    <div className="bg-black opacity-70 rounded-3xl shadow-2xl p-6 md:p-10">
+                    <div className="bg-black opacity-50 rounded-3xl shadow-2xl p-6 md:p-10">
 
                         <div className="text-center text-white mb-8">
                             <h1 className="text-3xl md:text-5xl font-bold">
@@ -40,7 +40,7 @@ export default function SearchFlights() {
                             <button
                                 onClick={() => setTripType("oneway")}
                                 className={`px-5 py-2 rounded-full text-sm font-semibold transition ${tripType === "oneway"
-                                    ? "bg-teal-600 text-white"
+                                    ? "bg-red-700 text-white"
                                     : "bg-white/70 text-gray-800"
                                     }`}
                             >
@@ -49,7 +49,7 @@ export default function SearchFlights() {
                             <button
                                 onClick={() => setTripType("roundtrip")}
                                 className={`px-5 py-2 rounded-full text-sm font-semibold transition ${tripType === "roundtrip"
-                                    ? "bg-teal-600 text-white"
+                                    ? "bg-red-700 text-white"
                                     : "bg-white/70 text-gray-800"
                                     }`}
                             >
@@ -140,7 +140,7 @@ export default function SearchFlights() {
                             <div className="md:col-span-6 mt-4 text-center">
                                 <button
                                     type="submit"
-                                    className="bg-teal-600 hover:bg-teal-700 transition text-white px-10 py-3 rounded-full font-semibold shadow-xl hover:scale-105"
+                                    className="bg-red-700 hover:bg-red-800 transition text-white px-10 py-3 rounded-full font-semibold shadow-xl hover:scale-105"
                                 >
                                     Search Flights
                                 </button>
