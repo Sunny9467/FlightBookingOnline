@@ -1,5 +1,6 @@
 import React from "react";
 import { FaEnvelope, FaLock } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export default function LoginPage() {
   return (
@@ -56,7 +57,7 @@ export default function LoginPage() {
           </div>
 
           {/* Button */}
-          <button className="w-full bg-red-700 text-white py-3 rounded-lg hover:bg-red-800 transition">
+          <button className="w-full cursor-pointer bg-red-700 text-white py-3 rounded-lg hover:bg-red-800 transition">
             Login
           </button>
 
@@ -65,9 +66,9 @@ export default function LoginPage() {
         {/* Footer */}
         <p className="text-center text-sm text-gray-500 mt-6">
           Don’t have an account?{" "}
-          <a href="/register" className="text-red-700 font-medium">
+          <Link to="/signup" className="text-red-700 font-medium">
             Sign Up
-          </a>
+          </Link>
         </p>
 
       </div>

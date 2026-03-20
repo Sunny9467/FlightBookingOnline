@@ -13,12 +13,12 @@ export default function Destinations() {
     { img: "/Images/Miami.jpg.jpeg", title: "Miami" },
     { img: "/Images/Grand Canyon national park.jpg.jpeg", title: "Grand Canyon" },
     { img: "/Images/Walt Disney World.jpg.jpeg", title: "Walt Disney World" },
-    { img: "public/Images/Yellowstone National Park.jpg.jpeg", title: "Yellowstone National Park" },
+    { img: "/Images/Yellowstone National Park.jpg.jpeg", title: "Yellowstone National Park" },
   ];
 
   return (
    <div className='p-5 sm:p-6 md:p-7 relative'>
-    <h2 className="text-center mb-2 py-4 text-3xl">Popular Destination</h2>
+    <h2 className="text-center mb-2 py-6 text-3xl">Popular Destination</h2>
                     <Swiper
                         speed={300}
                         spaceBetween={20}

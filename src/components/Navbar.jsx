@@ -1,61 +1,152 @@
 import { Menu } from "lucide-react";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function Navbar() {
-    const [menuOpen, setMenuOpen] = useState(false);
-    const [scroll, setScroll] = useState(false)
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [scroll, setScroll] = useState(false);
+  const [showNav, setShowNav] = useState(true);
 
-    useEffect(() => {
-        let scrolled = () => setScroll(window.scrollY >50)
-        window.addEventListener("scroll", scrolled)
-        return () => window.removeEventListener("scroll", scrolled)
-    }, [])
-    return (
-        <nav className={`sticky top-0 w-full z-50 h-23 text-center transition-all duration-300 ${scroll ? "bg-white text-black shadow-lg" : "bg-transparent text-white"
-            }`}>
+  useEffect(() => {
+    let timer;
 
-            <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-2 ">
+    const handleScroll = () => {
+      setShowNav(false);
 
-                <div className="md:hidden">
-                    <button onClick={() => setMenuOpen(!menuOpen)}>
-                        <Menu size={28} className="cursor-pointer text-black "/>
-                    </button>
-                </div>
+      clearTimeout(timer);
 
-                <div className="flex-1 md:justify-start">
-                    <Link to="/">
-                        <img
-                            src="/Images/logo/flight-booking-online-logo-final-png.png"
-                            alt="logo"
-                            className="h-full max-h-25 object-contain"
-                        />
-                    </Link>
-                </div>
+      timer = setTimeout(() => {
+        setScroll(window.scrollY > 50);
+        setShowNav(true);
+      },1000);
+    };
 
-                {/* Desktop Menu */}
-                <ul className="hidden md:flex text-center space-x-8 font-medium text-gray-700">
-                    <li><Link className="hover:text-red-700" to="/">Home</Link></li>
-                    <li><Link className="hover:text-red-700" to="/aboutus">About</Link></li>
-                    <li><Link className="hover:text-red-700" to="/booking">Booking</Link></li>
-                    <li><Link className="hover:text-red-700" to="/blogs">Blogs</Link></li>
-                    <li><Link className="hover:text-red-700" to="/contactus">ContactUs</Link></li>
-                    <li><Link className="hover:text-red-700" to="/login">Login</Link></li>
-                </ul>
-            </div>
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
-            {/* 🔥 Mobile Menu (Niche open hoga) */}
-            {menuOpen && (
-                <div className="md:hidden w-full bg-gray-100 py-3 text-black   text-center">
-                    <Link to="/" className="block">Home</Link>
-                    <Link to="/aboutus" className="block">About</Link>
-                    <Link to="/booking" className="block">Booking</Link>
-                    <Link to="/blogs" className="block">Blogs</Link>
-                    <Link to="/contactus" className="block">ContactUs</Link>
-                    <Link to="/login" className="block">Login</Link>
-                </div>
-            )}
+  return (
+    <>
+      {/* Navbar */}
+      <nav
+        className={`fixed top-0 left-0 w-full z-[999] h-20 flex items-center transition-all duration-500 ${
+          showNav
+            ? "translate-y-0 opacity-100"
+            : "-translate-y-20 opacity-0"
+        } ${
+          scroll
+            ? "bg-white/90 backdrop-blur-md text-black shadow-md"
+            : "bg-transparent text-white"
+        }`}
+      >
+        <div className="max-w-7xl mx-auto flex items-center justify-between w-full px-4 relative">
 
-        </nav>
-    );
+          {/* Mobile Menu Icon (Left) */}
+          <div className="md:hidden z-10">
+            <button onClick={() => setMenuOpen(!menuOpen)}>
+              <Menu
+                size={28}
+                className={`${scroll ? "text-black" : "text-black"}`}
+              />
+            </button>
+          </div>
+
+          {/* Logo (Center in mobile, left in desktop) */}
+          <div className="absolute left-1/2 -translate-x-1/2 md:static md:translate-x-0">
+            <Link to="/">
+              <img
+                src="/Images/logo/flight-booking-online-logo-final-png.png"
+                alt="logo"
+                className="h-25 md:h-50 object-contain"
+              />
+            </Link>
+          </div>
+
+          {/* Desktop Menu */}
+          <ul className="hidden md:flex space-x-8 font-medium ml-auto">
+            <li>
+              <Link
+                to="/"
+                className={`hover:text-red-700 ${
+                  scroll ? "text-black" : "text-black"
+                }`}
+              >
+                Home
+              </Link>
+            </li>
+
+            <li>
+              <Link
+                to="/aboutus"
+                className={`hover:text-red-700 ${
+                  scroll ? "text-black" : "text-black"
+                }`}
+              >
+                About Us
+              </Link>
+            </li>
+
+            <li>
+              <Link
+                to="/booking"
+                className={`hover:text-red-700 ${
+                  scroll ? "text-black" : "text-black"
+                }`}
+              >
+                Booking
+              </Link>
+            </li>
+
+            <li>
+              <Link
+                to="/blogs"
+                className={`hover:text-red-700 ${
+                  scroll ? "text-black" : "text-black"
+                }`}
+              >
+                Blogs
+              </Link>
+            </li>
+
+            <li>
+              <Link
+                to="/contactus"
+                className={`hover:text-red-700 ${
+                  scroll ? "text-black" : "text-black"
+                }`}
+              >
+                Contact
+              </Link>
+            </li>
+
+            <li>
+              <Link
+                to="/login"
+                className={`hover:text-red-700 ${
+                  scroll ? "text-black" : "text-black"
+                }`}
+              >
+                Login
+              </Link>
+            </li>
+          </ul>
+        </div>
+
+        {/* Mobile Menu */}
+        {menuOpen && (
+          <div className="absolute top-20 left-0 w-full bg-white text-black shadow-md md:hidden text-center">
+            <Link to="/" className="block py-3 border-b">Home</Link>
+            <Link to="/aboutus" className="block py-3 border-b">About Us</Link>
+            <Link to="/booking" className="block py-3 border-b">Booking</Link>
+            <Link to="/blogs" className="block py-3 border-b">Blogs</Link>
+            <Link to="/contactus" className="block py-3 border-b">Contact</Link>
+            <Link to="/login" className="block py-3">Login</Link>
+          </div>
+        )}
+      </nav>
+
+      {/* Content shift */}
+      <div className="pt-20"></div>
+    </>
+  );
 }

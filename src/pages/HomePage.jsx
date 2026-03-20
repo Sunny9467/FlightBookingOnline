@@ -75,11 +75,11 @@ export default function HomePage() {
                     className="w-full h-full object-cover"
                 />
 
-                <div className="absolute inset-0 bg-black/30"></div>
+                <div className="absolute inset-0 bg-black/35"></div>
 
                 <div className="absolute inset-0 flex flex-col justify-center px-6 md:px-20 text-white">
 
-                    <div className="mt-20">
+                    <div className="mt-10">
 
                         <h1 className="text-3xl md:text-5xl font-bold mb-4 text-center">
                             Explore The Skies
@@ -91,28 +91,31 @@ export default function HomePage() {
 
                     </div>
 
-                    <div className="flex space-x-4 mx-35 py-3">
+                    <div className="flex justify-center  items-center gap-3 md:gap-4 py-3 px-4 md:px-0 flex-wrap">
+
                         <button
                             onClick={() => setTripType("oneway")}
                             className={`px-5 py-2 rounded-full text-sm font-semibold transition ${tripType === "oneway"
-                                ? "bg-red-700 text-white"
-                                : "bg-white/70 text-gray-800"
+                                    ? "bg-red-700 text-white"
+                                    : "bg-white/70 text-gray-800"
                                 }`}
                         >
                             One Way
                         </button>
+
                         <button
                             onClick={() => setTripType("roundtrip")}
                             className={`px-5 py-2 rounded-full text-sm font-semibold transition ${tripType === "roundtrip"
-                                ? "bg-red-700 text-white"
-                                : "bg-white/70 text-gray-800"
+                                    ? "bg-red-700 text-white"
+                                    : "bg-white/70 text-gray-800"
                                 }`}
                         >
                             Round Trip
                         </button>
+
                     </div>
 
-                    <div className=" bg-white opacity-60 rounded-2xl p-5 md:p-6 w-full md:w-[85%] shadow-2xl mx-auto">
+                    <div className=" bg-white/70 backdrop-blur-md rounded-2xl p-5 md:p-6 w-full md:w-[85%] shadow-2xl mx-auto">
 
                         <form
                             className={`grid grid-cols-1 text-black md:grid-cols-6 gap-4 ${tripType === "roundtrip" ? "md:grid-cols-7" : ""
@@ -134,7 +137,7 @@ export default function HomePage() {
                                 <button
                                     type="button"
                                     onClick={handleSwap}
-                                    className="bg-gray-600 hover:bg-gray-500 text-xl rounded-full w-12 h-12 flex items-center justify-center shadow transition hover:rotate-180"
+                                    className="bg-red-700 hover:bg-red-800 text-xl text-white rounded-full w-12 h-12 flex items-center justify-center shadow transition hover:rotate-180"
                                 >
                                     ⇄
                                 </button>
@@ -164,7 +167,7 @@ export default function HomePage() {
 
                             {tripType === "roundtrip" && (
                                 <div className="border rounded-xl p-3 hover:shadow-md transition">
-                                    <p className="text-xs  ">Return</p>
+                                    <p className="text-xs">Return</p>
                                     <input
                                         type="date"
                                         value={returnDate}
@@ -176,22 +179,22 @@ export default function HomePage() {
                             )}
 
                             <div className="border rounded-xl p-3 hover:shadow-md transition">
-                                <p className="text-xs  ">Adults</p>
+                                <p className="text-xs">Adults</p>
                                 <select className="w-full outline-none font-semibold cursor-pointer">
-                                    <option className="bg-gray-600">1 Adult</option>
-                                    <option className="bg-gray-600">2 Adults</option>
-                                    <option className="bg-gray-600">3 Adults</option>
-                                    <option className="bg-gray-600">4 Adults</option>
+                                    <option className="bg-gray-200">1 Adult</option>
+                                    <option className="bg-gray-200">2 Adults</option>
+                                    <option className="bg-gray-200">3 Adults</option>
+                                    <option className="bg-gray-200">4 Adults</option>
                                 </select>
                             </div>
 
                             <div className="border rounded-xl p-3 hover:shadow-md transition">
                                 <p className="text-xs ">Children</p>
                                 <select className="w-full outline-none font-semibold ">
-                                    <option className="bg-gray-600">0 Child</option>
-                                    <option className="bg-gray-600">1 Child</option>
-                                    <option className="bg-gray-600">2 Children</option>
-                                    <option className="bg-gray-600">3 Children</option>
+                                    <option className="bg-gray-200">0 Child</option>
+                                    <option className="bg-gray-200">1 Child</option>
+                                    <option className="bg-gray-200">2 Children</option>
+                                    <option className="bg-gray-200">3 Children</option>
                                 </select>
                             </div>
 
@@ -199,7 +202,7 @@ export default function HomePage() {
                             <div className="md:col-span-full mt-3">
                                 <button
                                     type="submit"
-                                    className="w-full md:w-auto bg-red-700 hover:bg-red-900 transition text-white hover:text-white cursor-pointer px-10 py-3 rounded-xl font-semibold shadow-lg hover:scale-105"
+                                    className="w-full md:w-auto border text-white bg-red-700 hover:text-white hover:bg-red-900 cursor-pointer px-10 py-3 rounded-xl font-semibold hover:scale-105"
                                 >
                                     Search Flights
                                 </button>
@@ -211,75 +214,75 @@ export default function HomePage() {
                 </div>
             </div>
 
-            
-                {/* Section 1 */}
-                <div className="max-w-7xl mx-auto py-6 md:py-10 grid md:grid-cols-2 gap-6 md:gap-10 items-center">
 
-                    {/* Image */}
-                    <div className="order-1 md:order-1 shadow-md hover:shadow-xl transition hover:-translate-y-2">
-                        <img
-                            src="/Images/about.jpg"
-                            alt="about"
-                            className="w-full h-[250px] md:h-[400px] object-cover rounded-xl"
-                        />
-                    </div>
+            {/* Section 1 */}
+            <div className="max-w-7xl mx-auto py-6 md:py-10 grid md:grid-cols-2 gap-6 md:gap-10 items-center">
 
-                    {/* Content */}
-                    <div className="order-2 text-center md:text-left">
-                        <p className="text-gray-600 mb-4 text-sm md:text-base">
-                            At FlyAway, we make flight booking simple, fast, and affordable.
-                            Our platform helps you search, compare, and book flights from top airlines worldwide with ease.
-                        </p>
-
-                        <p className="text-gray-600 mb-6 text-sm md:text-base">
-                            We focus on providing secure payments, real-time availability, and a smooth booking experience.
-                            Whether you travel for business or leisure, we ensure your journey starts stress-free.
-                        </p>
-
-                        <Link
-                            to="/about"
-                            className="inline-block bg-red-600 px-6 py-3 rounded-full text-white hover:bg-red-800 transition"
-                        >
-                            Read More
-                        </Link>
-                    </div>
+                {/* Image */}
+                <div className="order-1 md:order-1 shadow-md hover:shadow-xl transition hover:-translate-y-2">
+                    <img
+                        src="/Images/About Us intro.jpg.jpeg"
+                        alt="about"
+                        className="w-full h-[250px] md:h-[400px] object-cover rounded-xl"
+                    />
                 </div>
 
-                {/* Section 2 */}
-                <div className="max-w-7xl mx-auto py-6 md:py-10 grid md:grid-cols-2 gap-6 md:gap-10 items-center">
+                {/* Content */}
+                <div className="order-2 text-center md:text-left">
+                    <p className="text-gray-600 mb-4 text-sm md:text-base">
+                        At FlyAway, we make flight booking simple, fast, and affordable.
+                        Our platform helps you search, compare, and book flights from top airlines worldwide with ease.
+                    </p>
 
-                    {/* Image */}
-                    <div className="order-1 md:order-2 shadow-md hover:shadow-xl transition hover:-translate-y-2">
-                        <img
-                            src="/Images/about.jpg"
-                            alt="about"
-                            className="w-full h-[250px] md:h-[400px] object-cover rounded-xl"
-                        />
-                    </div>
+                    <p className="text-gray-600 mb-6 text-sm md:text-base">
+                        We focus on providing secure payments, real-time availability, and a smooth booking experience.
+                        Whether you travel for business or leisure, we ensure your journey starts stress-free.
+                    </p>
 
-                    {/* Content */}
-                    <div className="order-2 text-center md:text-left">
-                        <p className="text-gray-600 mb-4 text-sm md:text-base">
-                            At FlyAway, we make flight booking simple, fast, and affordable.
-                            Our platform helps you search, compare, and book flights from top airlines worldwide with ease.
-                        </p>
-
-                        <p className="text-gray-600 mb-4 text-sm md:text-base">
-                            We focus on providing secure payments, real-time availability, and a smooth booking experience.
-                        </p>
-
-                        <p className="text-gray-600 mb-4 text-sm md:text-base">
-                            Whether you travel for business or leisure, we ensure your journey starts stress-free.
-                        </p>
-
-                        <Link
-                            to="/about"
-                            className="inline-block bg-red-600 px-6 py-3 rounded-full text-white hover:bg-red-800 transition"
-                        >
-                            Read More
-                        </Link>
-                    </div>
+                    <Link
+                        to="/about"
+                        className="inline-block bg-red-600 px-6 py-3 rounded-full text-white hover:bg-red-800 transition"
+                    >
+                        Read More
+                    </Link>
                 </div>
+            </div>
+
+            {/* Section 2 */}
+            <div className="max-w-7xl mx-auto py-6 md:py-10 grid md:grid-cols-2 gap-6 md:gap-10 items-center">
+
+                {/* Image */}
+                <div className="order-1 md:order-2 shadow-md hover:shadow-xl transition hover:-translate-y-2">
+                    <img
+                        src="/Images/About Us intro.jpg.jpeg"
+                        alt="about"
+                        className="w-full h-[250px] md:h-[400px] object-cover rounded-xl"
+                    />
+                </div>
+
+                {/* Content */}
+                <div className="order-1 text-center md:text-left">
+                    <p className="text-gray-600 mb-4 text-sm md:text-base">
+                        At FlyAway, we make flight booking simple, fast, and affordable.
+                        Our platform helps you search, compare, and book flights from top airlines worldwide with ease.
+                    </p>
+
+                    <p className="text-gray-600 mb-4 text-sm md:text-base">
+                        We focus on providing secure payments, real-time availability, and a smooth booking experience.
+                    </p>
+
+                    <p className="text-gray-600 mb-4 text-sm md:text-base">
+                        Whether you travel for business or leisure, we ensure your journey starts stress-free.
+                    </p>
+
+                    <Link
+                        to="/about"
+                        className="inline-block bg-red-600 px-6 py-3 rounded-full text-white hover:bg-red-800 transition"
+                    >
+                        Read More
+                    </Link>
+                </div>
+            </div>
 
             {/* </div> */}
 
@@ -324,7 +327,7 @@ export default function HomePage() {
 
                 {/* Center Form */}
                 <div className="max-w-3xl mx-auto">
-                    <form className="bg-white p-8 rounded-2xl shadow-lg space-y-4">
+                    <form className="bg-white p-6 rounded-2xl shadow-lg space-y-4">
 
                         <div>
                             <label className="block mb-1 font-medium">Name*</label>

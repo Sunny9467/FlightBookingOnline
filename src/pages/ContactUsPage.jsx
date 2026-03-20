@@ -29,7 +29,7 @@ export default function ContactUsPage() {
             </p>
           </div>
           <button className="mb-6 text-lg  text-center">
-            <Link to='tel:918858587858' className="bg-red-700 p-4 rounded-xl hover:bg-red-800">Contact Us</Link>
+            <Link to='tel:+918858587858' className="bg-red-700 p-4 rounded-xl hover:bg-red-800">Contact Us</Link>
           </button>
         </div>
       </div>
@@ -38,55 +38,69 @@ export default function ContactUsPage() {
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
 
           {/* Left Side - Info */}
-          <div className="bg-white p-8 rounded-2xl shadow-lg space-y-6 text-center hover:shadow-xl transition">
+          <div className="bg-white p-8 rounded-2xl shadow-lg space-y-6 hover:shadow-xl transition">
 
             {/* Heading */}
-            <div>
+            <div className="text-center">
               <h2 className="text-3xl font-bold mb-2">Contact Us</h2>
               <p className="text-gray-600">
                 Have questions? We'd love to hear from you. Reach out anytime.
               </p>
             </div>
 
-            {/* Info Items */}
-            <div className="space-y-5">
-
-              {/* Address */}
-              <div className="flex items-center justify-center gap-4">
-                <div className="bg-red-100 p-3 rounded-full">
-                  <FaMapMarkerAlt className="text-red-700 text-xl" />
-                </div>
-                <p className="text-gray-700">
-                  <strong>Address:</strong> Delhi, India
-                </p>
-              </div>
+            {/* 🔥 ONE LINE CONTACT INFO */}
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
 
               {/* Phone */}
-              <div className="flex items-center justify-center gap-4">
+              <div className="flex flex-col items-center gap-2">
                 <div className="bg-red-100 p-3 rounded-full">
                   <FaPhoneAlt className="text-red-700 text-xl" />
                 </div>
-                <p className="text-gray-700">
-                  <strong>Phone:</strong> +91 9876543210
+                <p className="text-gray-700 text-sm">
+                  <strong>Phone:</strong><br />
+                  <Link to="tel:+918986286734">+91 8986286734</Link>
                 </p>
               </div>
 
               {/* Email */}
-              <div className="flex items-center justify-center gap-4">
+              <div className="flex flex-col items-center gap-2">
                 <div className="bg-red-100 p-3 rounded-full">
                   <FaEnvelope className="text-red-700 text-xl" />
                 </div>
-                <p className="text-gray-700">
-                  <strong>Email:</strong> support@example.com
+                <p className="text-gray-700 text-sm break-all">
+                  <strong>Email:</strong><br />
+                  <Link to="mailto:kumarsunny919200@gmail.com">
+                    kumarsunny919200@gmail.com
+                  </Link>
+                </p>
+              </div>
+
+              {/* Address */}
+              <div className="flex flex-col items-center gap-2">
+                <div className="bg-red-100 p-3 rounded-full">
+                  <FaMapMarkerAlt className="text-red-700 text-xl" />
+                </div>
+                <p className="text-gray-700 text-sm">
+                  <strong>Address:</strong><br />
+                  Delhi, India
                 </p>
               </div>
 
             </div>
-            
+
+            {/* 🔥 MAP DIV */}
+            <div className="w-full h-[250px] md:h-[300px] rounded-xl overflow-hidden">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.255672588097!2d77.08272457528753!3d28.592105775686825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1bae6d0904b7%3A0x938fa4b31f997e05!2sAi.Risezonic!5e0!3m2!1sen!2sin!4v1774012786260!5m2!1sen!2sin"
+                className="w-full h-full border-0"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+
+          </div>
 
 
-
-                   </div>
           {/* Right Side - Form */}
           <form className="bg-white p-6 rounded-2xl shadow-md space-y-4">
             <label>Name*</label>

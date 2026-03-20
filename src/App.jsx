@@ -11,6 +11,8 @@ import ContactUsPage from './pages/ContactUsPage'
 import Testimonial from './components/Testimonial'
 import PageNotFound from './pages/PageNotFound'
 import LoginPage from './pages/user/LoginPage'
+import SignupPage from './pages/user/SingupPage'
+import Blogs from './components/Blogs'
 
 export default function App() {
   return (
@@ -25,11 +27,14 @@ export default function App() {
 
         {/* User */}
         <Route path='/login'element={<LoginPage/>} />
+        <Route path='/signup'element={<SignupPage/>} />
+
 
 
         <Route path='/booking'element={<SearchFlights/>} />
         <Route path='/destination'element={<SearchFlights/>} />
         <Route path='/testimonial'element={<Testimonial/>} />
+        <Route path='/blogs' element={<Blogs/>}/>
 
 
         <Route path='/*' element={<PageNotFound/>}/>
