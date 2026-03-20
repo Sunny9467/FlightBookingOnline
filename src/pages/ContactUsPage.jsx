@@ -102,6 +102,7 @@ export default function ContactUsPage() {
 
 
           {/* Right Side - Form */}
+          {/* Right Side - Form */}
           <form className="bg-white p-6 rounded-2xl shadow-md space-y-4">
             <label>Name*</label>
             <input
