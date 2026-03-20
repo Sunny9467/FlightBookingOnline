@@ -82,8 +82,11 @@ export default function ContactUsPage() {
               </div>
 
             </div>
+            
 
-          </div>
+
+
+                   </div>
           {/* Right Side - Form */}
           <form className="bg-white p-6 rounded-2xl shadow-md space-y-4">
             <label>Name*</label>
