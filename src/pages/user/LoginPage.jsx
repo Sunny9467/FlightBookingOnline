@@ -2,6 +2,7 @@ import React from "react";
 import { FaEnvelope, FaLock } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
+
 export default function LoginPage() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-100 to-red-50 px-4">
@@ -10,10 +11,7 @@ export default function LoginPage() {
 
         {/* Heading */}
         <div className="text-center mb-6">
-          <h2 className="text-3xl font-bold">Welcome Back</h2>
-          <p className="text-gray-500 text-sm">
-            Login to your account
-          </p>
+          <h2 className="text-2xl text-red-700 font-bold"> Login To Your Account</h2>
         </div>
 
         {/* Form */}
@@ -21,7 +19,7 @@ export default function LoginPage() {
 
           {/* Email */}
           <div>
-            <label className="block mb-1 font-medium">Email</label>
+            <label className="block mb-1 font-medium">Email*</label>
             <div className="flex items-center border rounded-lg px-3">
               <FaEnvelope className="text-gray-400" />
               <input
@@ -34,7 +32,7 @@ export default function LoginPage() {
 
           {/* Password */}
           <div>
-            <label className="block mb-1 font-medium">Password</label>
+            <label className="block mb-1 font-medium">Password*</label>
             <div className="flex items-center border rounded-lg px-3">
               <FaLock className="text-gray-400" />
               <input

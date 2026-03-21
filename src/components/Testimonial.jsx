@@ -31,9 +31,9 @@ export default function Testimonial() {
 
   return (
     <section className="py-12 bg-gray-100">
-      <h2 className="text-3xl font-bold text-center mb-8">What Our Customers Say</h2>
+      <h2 className="text-3xl font-bold text-red-700 text-center mb-8">What Our Customers Say</h2>
 
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-4xl mx-auto cursor-pointer">
         <Swiper
           modules={[Pagination, Autoplay]}
           spaceBetween={30}

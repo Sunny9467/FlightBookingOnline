@@ -51,7 +51,6 @@ export default function Navbar() {
             </button>
           </div>
 
-          {/* Logo (Center in mobile, left in desktop) */}
           <div className="absolute left-1/2 -translate-x-1/2 md:static md:translate-x-0">
             <Link to="/">
               <img
@@ -68,7 +67,7 @@ export default function Navbar() {
               <Link
                 to="/"
                 className={`hover:text-red-700 ${
-                  scroll ? "text-black" : "text-black font-semibold"
+                  scroll ? "text-black font-semibold" : "text-black font-semibold"
                 }`}
               >
                 Home
@@ -79,7 +78,7 @@ export default function Navbar() {
               <Link
                 to="/aboutus"
                 className={`hover:text-red-700 ${
-                  scroll ? "text-black" : "text-black font-semibold"
+                  scroll ? "text-black font-semibold" : "text-black font-semibold"
                 }`}
               >
                 About Us
@@ -90,7 +89,7 @@ export default function Navbar() {
               <Link
                 to="/booking"
                 className={`hover:text-red-700 ${
-                  scroll ? "text-black" : "text-black font-semibold"
+                  scroll ? "text-black font-semibold" : "text-black font-semibold"
                 }`}
               >
                 Booking
@@ -101,7 +100,7 @@ export default function Navbar() {
               <Link
                 to="/blogs"
                 className={`hover:text-red-700 ${
-                  scroll ? "text-black" : "text-black font-semibold"
+                  scroll ? "text-black font-semibold" : "text-black font-semibold"
                 }`}
               >
                 Blogs
@@ -112,7 +111,7 @@ export default function Navbar() {
               <Link
                 to="/contactus"
                 className={`hover:text-red-700 ${
-                  scroll ? "text-black" : "text-black font-semibold"
+                  scroll ? "text-black font-semibold" : "text-black font-semibold"
                 }`}
               >
                 Contact
@@ -123,7 +122,7 @@ export default function Navbar() {
               <Link
                 to="/login"
                 className={`hover:text-red-700 ${
-                  scroll ? "text-black" : "text-black font-semibold"
+                  scroll ? "text-black font-semibold" : "text-black font-semibold"
                 }`}
               >
                 Login

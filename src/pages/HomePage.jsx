@@ -66,7 +66,7 @@ export default function HomePage() {
     return (
 
         <div>
-            
+
             {/* Home Section */}
             <section>
                 <div className="relative min-h-screen">
@@ -227,12 +227,12 @@ export default function HomePage() {
 
             {/* About Section */}
             <section>
-    <h2 className="text-center mb-2 py-6 text-red-700 text-3xl">Popular Destination</h2>
+                <h2 className="text-center py-4 font-bold mt-2 text-red-700 text-3xl">About Us</h2>
 
                 <div className="max-w-7xl mx-auto py-6 md:py-10 grid md:grid-cols-2 gap-6 md:gap-10 items-center">
-                                
+
                     {/* Image */}
-                    <div className="order-1 md:order-1 shadow-md hover:shadow-xl transition hover:-translate-y-2">
+                    <div className="order-1 md:order-1 shadow-xl  cursor-pointer transition hover:-translate-y-2">
                         <img
                             src="/Images/About Us intro.jpg.jpeg"
                             alt="about"
@@ -265,7 +265,7 @@ export default function HomePage() {
                 <div className="max-w-7xl mx-auto py-6 md:py-10 grid md:grid-cols-2 gap-6 md:gap-10 items-center">
 
                     {/* Image */}
-                    <div className="order-1 md:order-2 shadow-md hover:shadow-xl transition hover:-translate-y-2">
+                    <div className="order-1 md:order-2 shadow-xl  cursor-pointer transition hover:-translate-y-2">
                         <img
                             src="/Images/About Us intro.jpg.jpeg"
                             alt="about"
@@ -297,19 +297,19 @@ export default function HomePage() {
                     </div>
                 </div>
             </section>
-            {/*About Section End*/ }
+            {/*About Section End*/}
 
 
             {/* Features Section */}
             <section>
-                <h2 className="text-center text-3xl text-red-700  py-4 mb-2">Our Features</h2>
+                <h2 className="text-center text-3xl font-bold text-red-700  py-4 mb-2">Our Features</h2>
                 <div className="grid grid-cols-1 md:grid-cols-4 mt-2 gap-4 p-6">
                     {
                         Features.map((item, index) => {
-                            return <div key={index} className="bg-white cursor-pointer rounded-xl p-6 text-center shadow-xl border-b-4 border-b-red-700 hover:shadow-red-300 transition hover:-translate-y-2">
+                            return <div key={index} className="bg-white cursor-pointer mb-5 rounded-xl p-6 text-center shadow-xl border-b-4 border-b-red-700 hover:shadow-red-300 transition hover:-translate-y-2">
 
                                 {/* Icon */}
-                                <div className="bg-red-100 text-red-700 w-14 h-14 flex items-center justify-center rounded-full mx-auto mb-4">
+                                <div className="text-red-700 w-14 h-14 flex items-center justify-center rounded-full mx-auto mb-4">
                                     {item.icon}
                                 </div>
 
@@ -337,10 +337,12 @@ export default function HomePage() {
             <Testimonial />
 
             {/* Contact Form Section */}
-            <section className="bg-gray-100 p-4 px-3">
+            <section className="bg-gray-100  p-4 px-3">
 
                 {/* Center Form */}
                 <div className="max-w-3xl mx-auto">
+                <h2 className="text-center font-bold p-4 mb-6 text-red-700 text-3xl">Contact Us</h2>
+
                     <form className="bg-white p-6 rounded-2xl shadow-lg space-y-4">
 
                         <div>

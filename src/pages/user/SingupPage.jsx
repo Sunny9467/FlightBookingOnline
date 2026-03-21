@@ -10,7 +10,7 @@ export default function SignupPage() {
 
         {/* Heading */}
         <div className="text-center mb-6">
-          <h2 className="text-3xl font-bold">Create Account</h2>
+          <h2 className="text-2xl text-red-700 font-bold">Create Account</h2>
          
         </div>
 
@@ -19,7 +19,7 @@ export default function SignupPage() {
 
           {/* Name */}
           <div>
-            <label className="block mb-1 font-medium">Full Name</label>
+            <label className="block mb-1 font-medium">Full Name*</label>
             <div className="flex items-center border rounded-lg px-3">
               <FaUser className="text-gray-400" />
               <input
@@ -32,7 +32,7 @@ export default function SignupPage() {
 
           {/* Email */}
           <div>
-            <label className="block mb-1 font-medium">Email</label>
+            <label className="block mb-1 font-medium">Email*</label>
             <div className="flex items-center border rounded-lg px-3">
               <FaEnvelope className="text-gray-400" />
               <input
@@ -45,7 +45,7 @@ export default function SignupPage() {
 
           {/* Password */}
           <div>
-            <label className="block mb-1 font-medium">Password</label>
+            <label className="block mb-1 font-medium">Password*</label>
             <div className="flex items-center border rounded-lg px-3">
               <FaLock className="text-gray-400" />
               <input
@@ -58,7 +58,7 @@ export default function SignupPage() {
 
           {/* Confirm Password */}
           <div>
-            <label className="block mb-1 font-medium">Confirm Password</label>
+            <label className="block mb-1 font-medium">Confirm Password*</label>
             <div className="flex items-center border rounded-lg px-3">
               <FaLock className="text-gray-400" />
               <input

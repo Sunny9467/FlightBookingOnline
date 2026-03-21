@@ -32,7 +32,7 @@ export default function FAQ() {
 
   return (
     <div className="py-12 px-6 bg-gray-50">
-      <h2 className="text-3xl font-bold text-center mb-10">
+      <h2 className="text-3xl font-bold text-red-700 text-center mb-10">
          Frequently Asked Questions
       </h2>
 
@@ -43,8 +43,8 @@ export default function FAQ() {
             className="bg-white rounded-xl shadow-md p-4 cursor-pointer"
             onClick={() => toggleFAQ(index)}
           >
-            <div className="flex justify-between text-2xl items-center">
-              <h3 className="font-semibold text-lg">
+            <div className="flex  justify-between text-2xl items-center">
+              <h3 className="font-semibold  text-lg">
                 {item.question}
               </h3>
               <span className="text-3xl">
