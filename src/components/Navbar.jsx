@@ -46,7 +46,7 @@ export default function Navbar() {
             <button onClick={() => setMenuOpen(!menuOpen)}>
               <Menu
                 size={28}
-                className={`${scroll ? "text-black" : "text-black"}`}
+                className={`${scroll ? "text-black" : "text-black cursor-pointer"}`}
               />
             </button>
           </div>
@@ -68,7 +68,7 @@ export default function Navbar() {
               <Link
                 to="/"
                 className={`hover:text-red-700 ${
-                  scroll ? "text-black" : "text-black"
+                  scroll ? "text-black" : "text-black font-semibold"
                 }`}
               >
                 Home
@@ -79,7 +79,7 @@ export default function Navbar() {
               <Link
                 to="/aboutus"
                 className={`hover:text-red-700 ${
-                  scroll ? "text-black" : "text-black"
+                  scroll ? "text-black" : "text-black font-semibold"
                 }`}
               >
                 About Us
@@ -90,7 +90,7 @@ export default function Navbar() {
               <Link
                 to="/booking"
                 className={`hover:text-red-700 ${
-                  scroll ? "text-black" : "text-black"
+                  scroll ? "text-black" : "text-black font-semibold"
                 }`}
               >
                 Booking
@@ -101,7 +101,7 @@ export default function Navbar() {
               <Link
                 to="/blogs"
                 className={`hover:text-red-700 ${
-                  scroll ? "text-black" : "text-black"
+                  scroll ? "text-black" : "text-black font-semibold"
                 }`}
               >
                 Blogs
@@ -112,7 +112,7 @@ export default function Navbar() {
               <Link
                 to="/contactus"
                 className={`hover:text-red-700 ${
-                  scroll ? "text-black" : "text-black"
+                  scroll ? "text-black" : "text-black font-semibold"
                 }`}
               >
                 Contact
@@ -123,7 +123,7 @@ export default function Navbar() {
               <Link
                 to="/login"
                 className={`hover:text-red-700 ${
-                  scroll ? "text-black" : "text-black"
+                  scroll ? "text-black" : "text-black font-semibold"
                 }`}
               >
                 Login
@@ -134,13 +134,13 @@ export default function Navbar() {
 
         {/* Mobile Menu */}
         {menuOpen && (
-          <div className="absolute top-20 left-0 w-full bg-white text-black shadow-md md:hidden text-center">
-            <Link to="/" className="block py-3 border-b">Home</Link>
-            <Link to="/aboutus" className="block py-3 border-b">About Us</Link>
-            <Link to="/booking" className="block py-3 border-b">Booking</Link>
-            <Link to="/blogs" className="block py-3 border-b">Blogs</Link>
-            <Link to="/contactus" className="block py-3 border-b">Contact</Link>
-            <Link to="/login" className="block py-3">Login</Link>
+          <div className="absolute top-15 left-0 w-full bg-white text-black shadow-md md:hidden text-center">
+            <Link to="/" className="block py-3 hover:text-red-700 font-semibold">Home</Link>
+            <Link to="/aboutus" className="block py-3 hover:text-red-700 font-semibold">About Us</Link>
+            <Link to="/booking" className="block py-3 hover:text-red-700 font-semibold">Booking</Link>
+            <Link to="/blogs" className="block py-3 hover:text-red-700 font-semibold">Blogs</Link>
+            <Link to="/contactus" className="block py-3 hover:text-red-700 font-semibold">Contact</Link>
+            <Link to="/login" className="block py-3 hover:text-red-700 font-semibold">Login</Link>
           </div>
         )}
       </nav>
@@ -150,3 +150,7 @@ export default function Navbar() {
     </>
   );
 }
+
+
+
+

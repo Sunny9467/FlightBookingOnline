@@ -18,7 +18,7 @@ export default function Destinations() {
 
   return (
    <div className='p-5 sm:p-6 md:p-7 relative'>
-    <h2 className="text-center mb-2 py-6 text-3xl">Popular Destination</h2>
+    <h2 className="text-center mb-2 py-6 text-red-700 text-3xl">Popular Destination</h2>
                     <Swiper
                         speed={300}
                         spaceBetween={20}
