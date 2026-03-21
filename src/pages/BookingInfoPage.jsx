@@ -2,7 +2,7 @@ import { FaClock, FaHeadset, FaPlaneDeparture } from "react-icons/fa";
 
 export default function BookingInfoPage() {
   return (
-    <section className="bg-gray-50 py-12 px-4 md:px-10">
+    <section className="bg-gray-50 py-12 px-4 md:px-10" data-aos="zoom-in-up" >
       
       <div className="max-w-6xl mx-auto text-center mb-10">
         <h2 className="text-2xl text-red-700 md:text-4xl font-bold mb-4">

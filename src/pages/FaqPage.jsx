@@ -31,7 +31,7 @@ export default function FAQ() {
   };
 
   return (
-    <div className="py-12 px-6 bg-gray-50">
+    <div className="py-12 px-6 bg-gray-50" data-aos="fade-up">
       <h2 className="text-3xl font-bold text-red-700 text-center mb-10">
          Frequently Asked Questions
       </h2>

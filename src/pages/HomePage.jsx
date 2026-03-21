@@ -68,7 +68,7 @@ export default function HomePage() {
         <div>
 
             {/* Home Section */}
-            <section>
+            <section data-aos="zoom-in">
                 <div className="relative min-h-screen">
 
                     {/* Background Image */}
@@ -226,7 +226,7 @@ export default function HomePage() {
 
 
             {/* About Section */}
-            <section>
+            <section data-aos="zoom-in-up">
                 <h2 className="text-center py-4 font-bold mt-2 text-red-700 text-3xl">About Us</h2>
 
                 <div className="max-w-7xl mx-auto py-6 md:py-10 grid md:grid-cols-2 gap-6 md:gap-10 items-center">
@@ -301,7 +301,8 @@ export default function HomePage() {
 
 
             {/* Features Section */}
-            <section>
+            <section data-aos="fade-up"
+              data-aos-duration="3000">
                 <h2 className="text-center text-3xl font-bold text-red-700  py-4 mb-2">Our Features</h2>
                 <div className="grid grid-cols-1 md:grid-cols-4 mt-2 gap-4 p-6">
                     {
@@ -337,7 +338,7 @@ export default function HomePage() {
             <Testimonial />
 
             {/* Contact Form Section */}
-            <section className="bg-gray-100  p-4 px-3">
+            <section className="bg-gray-100  p-4 px-3" data-aos="fade-up">
 
                 {/* Center Form */}
                 <div className="max-w-3xl mx-auto">

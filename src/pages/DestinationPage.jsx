@@ -49,7 +49,7 @@ export default function Destinations() {
     ];
 
     return (
-        <div className='p-5 sm:p-6 md:p-7 relative'>
+        <div className='p-5 sm:p-6 md:p-7 relative' data-aos="fade-up">
             <h2 className="text-center mb-2 py-6 font-bold text-red-700 text-3xl">Popular Destination</h2>
             <Swiper
                 speed={300}
