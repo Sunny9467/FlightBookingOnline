@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 export default function BlogCard({post}) {
-    console.log(post)
   return (
     <>
      <div className="bg-white shadow-md rounded-xl overflow-hidden hover:shadow-lg transition-all">

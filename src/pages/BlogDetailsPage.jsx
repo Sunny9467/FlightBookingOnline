@@ -2,7 +2,7 @@ import { Link, useParams } from "react-router-dom";
 
 
 import { useEffect } from "react";
-import { blogs } from "../data/blog";
+import {blogs} from '../data/blog'
 import { ArrowRight, Dot } from "lucide-react";
 import BlogCard from "./BlogCard";
 

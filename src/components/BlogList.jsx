@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
-import { blogs } from '../data/blog'
+import {blogs} from '../data/blog'
 import BlogCard from '../pages/BlogCard'
+
 
 export default function BlogList() {
 
