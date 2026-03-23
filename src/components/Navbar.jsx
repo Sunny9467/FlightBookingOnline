@@ -18,7 +18,7 @@ export default function Navbar() {
       timer = setTimeout(() => {
         setScroll(window.scrollY > 50);
         setShowNav(true);
-      },1000);
+      },500);
     };
 
     window.addEventListener("scroll", handleScroll);
