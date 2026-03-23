@@ -103,6 +103,8 @@ export default function ContactUsPage() {
 
           {/* Right Side - Form */}
           {/* Right Side - Form */}
+{/* import BookingInfoPage from './BookingInfoPage'; */}
+
           <form className="bg-white p-6 rounded-2xl shadow-md space-y-4">
             <label>Name*</label>
             <input
