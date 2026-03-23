@@ -73,7 +73,7 @@ export default function Destinations() {
                         <SwiperSlide className='' key={id}>
 
                             <div className='' >
-                                <div className='relative overflow-hidden group transition'>
+                                <div className='relative overflow-hidden rounded-xl group transition'>
                                     <img src={item.img} className=' h-full w-full cursor-pointer object-cover transition-all duration-300 group-hover:scale-110' alt={`${item.img}`} />
                                 </div>
                                 <div className='p-1 sm:p-2 md:p-3'>
@@ -88,6 +88,7 @@ export default function Destinations() {
                     ))
                 }
             </Swiper>
+            <div className="custom-pagination absolute -bottom-6 left-0 w-full text-center"></div>
         </div>
     );
 }

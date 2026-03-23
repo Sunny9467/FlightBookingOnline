@@ -227,9 +227,9 @@ export default function HomePage() {
 
             {/* About Section */}
             <section data-aos="zoom-in-up">
-                <h2 className="text-center py-4 font-bold mt-2 text-red-700 text-3xl">About Us</h2>
+                <h2 className="text-center py-4 font-bold mt-2 text-red-700 text-3xl">About</h2>
 
-                <div className="max-w-7xl mx-auto py-6 md:py-10 grid md:grid-cols-2 gap-6 md:gap-10 items-center">
+                <div className="max-w-7xl mx-auto px-4 md:px-0 py-6 md:py-10 grid md:grid-cols-2 gap-6 md:gap-10 items-center">
 
                     {/* Image */}
                     <div className="order-1 md:order-1 shadow-xl  cursor-pointer transition hover:-translate-y-2">
@@ -262,7 +262,7 @@ export default function HomePage() {
                 </div>
 
                 {/* Section 2 */}
-                <div className="max-w-7xl mx-auto py-6 md:py-10 grid md:grid-cols-2 gap-6 md:gap-10 items-center">
+                <div className="max-w-7xl mx-auto px-4 md:px-0 py-6 md:py-10 grid md:grid-cols-2 gap-6 md:gap-10 items-center">
 
                     {/* Image */}
                     <div className="order-1 md:order-2 shadow-xl  cursor-pointer transition hover:-translate-y-2">
