@@ -22,7 +22,7 @@ export default function SearchFlights() {
 
                     {/* Background Image */}
                     <img
-                        src="/Images/booking Banner.jpg.jpeg"
+                        src="/Images/booking Banner 1.jpg.jpeg"
                         alt="banner"
                         className="w-full h-full object-cover absolute inset-0"
                     />

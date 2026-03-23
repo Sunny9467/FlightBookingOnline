@@ -234,9 +234,9 @@ export default function HomePage() {
                     {/* Image */}
                     <div className="order-1 md:order-1 shadow-xl  cursor-pointer transition hover:-translate-y-2">
                         <img
-                            src="/Images/About Us intro.jpg.jpeg"
+                            src="/Images/About Us intro.jpg_New1.jpeg"
                             alt="about"
-                            className="w-full h-[250px] md:h-[400px] object-cover rounded-xl"
+                            className="w-full h-full object-cover rounded-xl"
                         />
                     </div>
 
@@ -267,9 +267,9 @@ export default function HomePage() {
                     {/* Image */}
                     <div className="order-1 md:order-2 shadow-xl  cursor-pointer transition hover:-translate-y-2">
                         <img
-                            src="/Images/About Us intro.jpg.jpeg"
+                            src="/Images/About us intro 1.jpg.jpeg"
                             alt="about"
-                            className="w-full h-[250px] md:h-[400px] object-cover rounded-xl"
+                            className="w-full  object-cover rounded-xl"
                         />
                     </div>
 

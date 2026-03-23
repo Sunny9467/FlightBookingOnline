@@ -10,7 +10,7 @@ const About = () => {
         <div className="relative h-[90vh]">
 
           <img
-            src="/Images/About Us Banner.jpg.jpeg"
+            src="/Images/About Us Banner 1.jpg.jpeg"
             alt="banner"
             className="w-full h-full object-cover"
           />
