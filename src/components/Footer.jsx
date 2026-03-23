@@ -25,7 +25,7 @@ export default function Footer() {
           <div className="space-y-6">
 
             <div className="flex gap-4 items-start group">
-              <MapPin className="text-blue-400 group-hover:scale-110 transition" />
+              <MapPin className="text-red-700 group-hover:scale-110 transition" />
               <div>
                 <h4 className="font-semibold">Address</h4>
                 <Link className="text-sm text-gray-300 hover:text-red-700 transition">
@@ -35,7 +35,7 @@ export default function Footer() {
             </div>
 
             <div className="flex gap-4 items-start group">
-              <Phone className="text-blue-400 group-hover:scale-110 transition" />
+              <Phone className="text-red-700 group-hover:scale-110 transition" />
               <div>
                 <h4 className="font-semibold">Phone</h4>
                 <Link
@@ -48,7 +48,7 @@ export default function Footer() {
             </div>
 
             <div className="flex gap-4 items-start group">
-              <Mail className="text-blue-400 group-hover:scale-110 transition" />
+              <Mail className="text-red-700 group-hover:scale-110 transition" />
               <div>
                 <h4 className="font-semibold">Email</h4>
                 <Link to={`mailto: kumarsunny919200@gmail.com`} className="text-sm text-gray-300 hover:text-red-700 transition">
@@ -103,7 +103,7 @@ export default function Footer() {
           </p>
 
           {/* Newsletter Input */}
-          <div className="bg-white/10 backdrop-blur-lg border border-red-700 rounded-xl p-3 flex items-center">
+          <div className="bg-white/10 backdrop-blur-lg border border-white rounded-xl p-3 flex items-center">
 
             <input
               type="email"
@@ -136,7 +136,7 @@ export default function Footer() {
               <FaYoutube/>
             </Link>
 
-            <Link className="hover:text-blue-400 transition">
+            <Link className="hover:text-red-700 transition">
               <FaLinkedin/>
             </Link>
 
