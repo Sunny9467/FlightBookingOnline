@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import BookingInfoPage from './BookingInfoPage';
 
 export default function SearchFlights() {
     let [open, setopen] = useState(null)
@@ -171,8 +172,8 @@ export default function SearchFlights() {
                 </div>
             </section>
 
-
-
+        <BookingInfoPage/>
+                                
 
         </>
     )

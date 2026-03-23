@@ -41,10 +41,11 @@ function AppContent() {
         <Route path='/aboutus' element={<AboutPage />} />
         <Route path='/faq' element={<FaqPage />} />
         <Route path='/contactus' element={<ContactUsPage />} />
+        <Route path='/contactus' element={<ContactUsPage />} />
+
         <Route path='/login' element={<LoginPage />} />
         <Route path='/signup' element={<SignupPage />} />
         <Route path='/booking' element={<SearchFlights />} />
-        <Route path='/destination' element={<SearchFlights />} />
         <Route path='/testimonial' element={<Testimonial />} />
         <Route path='/blogs' element={<BlogList />} />
           <Route path='/blogs/:slug' element={<BlogDetailsPage />} />

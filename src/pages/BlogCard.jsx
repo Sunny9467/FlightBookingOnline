@@ -12,7 +12,7 @@ export default function BlogCard({post}) {
                 <p className="text-gray-600 text-sm mb-3">{post.metaDescription.slice(0, 100)}...</p>
                 <Link
                     to={`/blogs/${post.slug}`}
-                    className="text-blue-600 font-medium hover:underline"
+                    className="text-red-700 font-medium hover:underline"
                 >
                     Read More →
                 </Link>
