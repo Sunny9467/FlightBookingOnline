@@ -1,6 +1,5 @@
 import { Link, useParams } from "react-router-dom";
 
-import { FaFacebook, FaTwitter, FaLinkedin } from "react-icons/fa";
 
 import { useEffect } from "react";
 import { blogs } from "../data/blog";
